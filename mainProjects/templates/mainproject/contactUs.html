@@ -1,0 +1,52 @@
+
+
+{% extends "mainproject/basic.html" %}
+
+
+
+
+
+{% block body %} 
+
+<div class=" contactwidth contavtt " style="background-image:url(https://th.bing.com/th/id/R.6748e73e3a1a34c7ecc15c08be7e1cb2?rik=LNvz%2f5AVmeWGog&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fdark-abstract-black-low-poly-n1.jpg&ehk=I9k1WXWMW9ztOk6T8pzji6MKSrrhgzvpwbgxu6A6UlM%3d&risl=&pid=ImgRaw&r=0);">
+
+  <h1 class="display-1   cusyonn " >CONTACT US</h1>
+  <div class="div  cusyonn">
+
+<div class="col-5 "  >
+    <form action="/project/contactUsSubmit/" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label">Name </label>
+           <input type="text" class="form-control" name="NameCont" > 
+           
+         </div>
+         <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label">Email address</label>
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="EmailCon">
+           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+         </div>
+         <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+           <input type="number" class="form-control" name="phoneCon">
+           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+         </div>
+         <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label">Description</label>
+           <textarea name="desCon" class="form-control" cols="5" rows="3"></textarea>
+         
+         </div>
+         
+         
+        
+         <button type="submit" class="btn btn-danger">Submit</button>
+       </form>
+
+
+</div>
+   
+  
+</div>
+
+ 
+ {% endblock body %} 
